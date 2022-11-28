@@ -1,10 +1,5 @@
 <?php
-session_start();
-$password_lenght = $_GET["password-lenght"] ?? "";
-if (!empty($password_lenght)) {
-    $_SESSION["password-lenght"] = $password_lenght;
-}
-include __DIR__ . '/functions.php';
+
 
 ?>
 
@@ -21,7 +16,7 @@ include __DIR__ . '/functions.php';
 <body>
 
     <main>
-        <form action="index.php" method="GET">
+        <form action="result.php" method="GET">
             <div>
                 <label for="passowrd-lenght">Lunghezza password :</label>
                 <input type="number" id="password-lenght" name="password-lenght">
